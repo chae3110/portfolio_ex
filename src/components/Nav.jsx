@@ -11,6 +11,7 @@ export default function Nav({ data, onChangeMode, id }) {
                 onChangeMode(d.id);
               }}
               className={id === d.id ? "active" : ""}
+              aria-current={id === d.id ? true : false}
             >
               {d.title}
             </button>
